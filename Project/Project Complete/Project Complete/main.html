@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>main</title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+
+    function rb1Show() {
+
+      document.getElementById("leftHead").innerHTML = "심리 상담";
+      document.getElementById("leftP").innerHTML = "전문가에게 심리 상담을 받아보세요.";
+    }
+
+    function rb2Show() {
+
+
+      document.getElementById("leftHead").innerHTML = "심리 검사";
+      document.getElementById("leftP").innerHTML = "심리 검사를 통해 자신을 돌이켜 보아요.";
+    }
+
+    function rb3Show() {
+
+      document.getElementById("leftHead").innerHTML = "심리 이야기";
+      document.getElementById("leftP").innerHTML = "심리의 기원과 역사에 대해 알아보아요.";
+    }
+
+    function defaultShow() {
+
+      document.getElementById("leftHead").innerHTML = "Inside Care";
+      document.getElementById("leftP").innerHTML = "인사이드 케어에 오신것을 환영합니다.";
+    }
+
+    function rb1Clicked() {
+      location.href = "counsel.html";
+    }
+
+    function rb2Clicked() {
+      location.href = 'http://www.google.com';
+    }
+
+    function rb3Clicked() {
+      location.href = 'http://www.google.com';
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="dark"></div>
+
+
+  <div id="container">
+    <div id="left">
+      <div class="boxContainer">
+        <div class="leftBox" id="lb" onmouseover="defaultShow()">
+          <h2 id="leftHead">InSide Care</h2>
+          <p id="leftP">
+            인사이드 케어에 오신것을 환영합니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="right">
+
+      <div class="boxContainer">
+        <div class="rightBox" id="rb1" onmouseover="rb1Show()" onclick="rb1Clicked()">
+          <span id="text">rightBox1</span>
+        </div>
+      </div>
+
+
+      <div class="boxContainer">
+        <div class="rightBox" id="rb2" onmouseover="rb2Show()" onclick="rb2Clicked()">
+          rightBox2
+        </div>
+      </div>
+
+
+      <div class="boxContainer">
+        <div class="rightBox" id="rb3" onmouseover="rb3Show()" onclick="rb3Clicked()">
+          rightBox3
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

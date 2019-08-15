@@ -1,0 +1,54 @@
+*,body{
+ font-family: "휴먼편지체";
+ margin:0px;
+ padding:0px;
+ font-size:11px;
+ background-color: white;
+}
+caption{
+margin-top: 50px;
+ width:800px;
+ height:50px;
+}
+caption span{
+  font-family:휴먼편지체;
+  color:black;
+  font-size: 25px;
+}
+table{
+ 
+ border-collapse: collapse;
+ display: table;
+ width:300px;
+ height:1000px;
+ margin-left: auto;
+ margin-right: auto;
+}
+td{
+ border-bottom: 1px solid #000;
+ text-align:left;
+ padding:5px 10px;
+}
+th{
+ text-align:left;
+ height:34px;
+ padding:0px 10px;
+ font-size:15px;
+}
+th span{
+  display:block;
+  padding:0px 0px 2px 0px;
+}
+tr:FIRST-CHILD{
+  border-bottom: 2px solid #000;
+}
+tr:last-CHILD{
+ border-bottom: 2px solid #000;
+}
+
+.bb{
+ border:none;
+}
+td{
+ background: no-repeat right bottom;
+}
